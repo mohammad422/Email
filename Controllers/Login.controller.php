@@ -20,7 +20,7 @@ if (isset($_POST["username"]) && isset($_POST["password"])){
     $credentialIsCorrect = login($username, $password);
 
 // redirect to login page if username or password is wrong
-    if (!isset($credentialIsCorrect)) { //hello
+    if (!isset($credentialIsCorrect)) {
         $_SESSION['error'] = 'Username Or Password Is Incorrect';
         echo "ok";
         header('location:../Controllers/Login.controller.php');
